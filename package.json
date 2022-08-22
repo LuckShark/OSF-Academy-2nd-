@@ -1,0 +1,31 @@
+{
+  "name": "osf-academy",
+  "version": "1.0.0",
+  "description": "eCommerce Frontend Project (HTML/CSS/JavaScript + Responsive)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrian Karsanashvili",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.5.0",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  },
+  "browserslist": [
+    "last 8 versions"
+  ]
+}
