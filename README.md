@@ -1,2 +1,4 @@
-# OSF-Academy
- eCommerce Frontend Project (HTML/CSS/JavaScript + Responsive)
+# OSF Digital - Intership
+
+Academy Frontend Project <br>
+August 2022
