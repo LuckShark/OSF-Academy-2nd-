@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+    background-color: $white;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(232, 226, 214);
+
+    &__whrapper {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (min-width: 768px) {
+            height: 78px;
+            position: relative;
+        }
+    }
+}

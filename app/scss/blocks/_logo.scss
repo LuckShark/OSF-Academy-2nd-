@@ -1,0 +1,51 @@
+// ----- Logo -----
+.logo {
+    position: absolute;
+    left: 50%;
+
+    @media only screen and (min-width: 768px) {
+        position: static;
+        display: flex;
+	}
+
+    &__image {
+        position: relative;
+        left: -50%;
+        width: 46px;
+        height: 46px;
+
+        @media only screen and (min-width: 768px) {
+            position: static;
+            width: 63px;
+            height: 65px;
+            margin-right: 10px;
+        }
+    }
+
+    &__text-whrapper {
+        display: none;
+
+        @media only screen and (min-width: 768px) {
+            display: block;
+        }  
+    }
+
+    &__heading {
+        font-size: 31.655px;
+        color: #011847;
+        font-weight: 900;
+        letter-spacing: 5.9px;
+        margin: 10px 0 0;
+        padding: 0;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        color: $bg-osf;
+        text-transform: initial;
+        margin: -10px 0 0;
+        padding: 0;
+        letter-spacing: 0.2px;
+    }
+}
+// ----- // Logo -----

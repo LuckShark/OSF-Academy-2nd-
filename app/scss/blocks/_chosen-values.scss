@@ -1,0 +1,88 @@
+// ----- Drop-down values -----
+.chosen-value {
+    display: none;
+
+    @media only screen and (min-width: 1280px) {
+        display: flex;
+        color: rgba(69, 65, 62, 0.502);
+        text-align: left;
+        text-transform: uppercase;
+        width: 185px;
+        z-index: 2;
+    }
+
+    &__icon {
+        margin: 0 0 0 9px;
+    }
+
+    &__value {
+        position: relative;
+        margin-right: 17px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__item {
+        display: block;
+        text-decoration: none;
+        padding: 5px 0 5px;
+        color: rgba(69, 65, 62, 0.502);
+        background-color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+
+         &_main {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 6px 0 7px 17px;
+
+            &:hover .chosen-value__drop-down {
+                height: auto;
+                opacity: 1;
+                overflow: visible;
+            }
+
+            &:hover .chosen-value__icon {
+                transform: rotateX(180deg);
+            }
+
+        }
+
+        &_first-child {
+            padding-top: 5px 0 5px;
+            border-top: 1px solid rgba(69, 65, 62, 0.502);
+
+            &:hover {
+                border-top: 1px solid rgba(255, 255, 255, 0.8);
+            }
+        }
+        
+        &:visited {
+            color: rgba(69, 65, 62, 0.502);
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.3);
+            transition: $transition;
+        }
+    }
+
+    &__drop-down {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 37px;
+        left: 0;
+        right: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: $transition;
+    }
+}
+// ----- // Drop-down values -----

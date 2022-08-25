@@ -1,0 +1,154 @@
+// ----- Secondary -----
+.secondary {
+    background-color: $bg-peach;
+    width: 100%;
+    padding: 30px 0 40px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 40px 0;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        padding: 60px 0 40px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        align-items: center;
+        margin-bottom: 10px;
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &_display-mobile-none {
+        display: none;
+
+        @media only screen and (min-width: 992px) {
+            display: inline;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 13px;
+        color: $bg-osf;
+
+        &:visited, &:focus {
+            text-decoration: none;
+            color: $bg-osf;
+        }
+
+        &:hover {
+            text-decoration: none;
+            opacity: 50%;
+            transition: $transition;
+        }
+
+        &_devider {
+            color: #C3CACD;
+            padding: 0 10px;
+        }
+
+        &_active {
+            color: $osf-brown;
+
+            &:visited, &:focus, &:hover {
+                color: $osf-brown;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__title {
+        display: flex;
+        min-width: 100%;
+        justify-content: space-between;
+    }
+
+     &__line {
+        border-bottom: 2px solid #E7E3E0;
+        max-width: 45%;
+        min-width: 30%;
+        margin-bottom: 39px;
+
+        @media only screen and (min-width: 768px) {
+            min-width: 35%;
+            margin-bottom: 47px;
+        }
+
+        @media only screen and (min-width: 1280px) {
+            min-width: 42%;
+            margin-bottom: 45px;
+        }
+
+        &_white {
+            border-bottom: 2px solid $white;
+            min-width: 22%;
+
+            @media only screen and (min-width: 768px) {
+                min-width: 27%;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                min-width: 32%;
+                margin-bottom: 45px;
+            }
+        }
+
+        &_short {
+            min-width: 7%;
+            margin-bottom: 35px;
+
+            @media only screen and (min-width: 400px) {
+                min-width: 18%;
+            }
+
+            @media only screen and (min-width: 768px) {
+                min-width: 15%;
+                margin-bottom: 47px;
+            }
+
+            @media only screen and (min-width: 768px) {
+                min-width: 12%;
+                margin-bottom: 45px;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                min-width: 20%;
+            }
+        }
+    }
+
+    &__heading {
+        color: $osf-brown;
+        width: 120px;
+        text-align: center;
+        font-size: 31px;
+        margin: 20px;
+        font-weight: 900;
+
+        @media only screen and (min-width: 768px) {
+            width: 170px;
+            min-width: 10%;
+            font-size: 48px;
+        }
+
+        &_long {
+            width: 300px;
+            font-size: 27px;
+            margin: 20px 0;
+
+            @media only screen and (min-width: 768px) {
+                width: 700px;
+                min-width: 60%;
+                font-size: 48px;
+                margin: 20px;
+            }
+        }
+    }
+}
+// ----- // Secondary -----

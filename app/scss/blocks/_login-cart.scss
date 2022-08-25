@@ -1,0 +1,94 @@
+// ----- Login & Mini-cart -----
+.login-cart {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 65px 10px;
+    background-color: $bg-dark-blue;
+    z-index: 20;
+    cursor: pointer;
+
+    @media only screen and (min-width: 530px) {
+        padding: 20px 150px 10px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        padding: 20px 250px 10px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        position: static;
+        width: 207px;
+        margin-right: 10px;
+        background-color: inherit;
+        color: inherit;
+        padding: 0;
+    }
+
+    &__content {
+        position: relative;
+
+        &:hover {
+            opacity: 0.7;
+            transition: $transition;
+        }
+    }
+
+    &__counter {
+        position: absolute;
+        font-size: 12px;
+        color: $bg-osf;
+        height: 20px;
+        width: 20px;
+        top: -8px;
+        right: -6px;
+        border: 1.5px solid $bg-osf;
+        border-radius: 50%;
+        padding-bottom: 17px;
+        text-align: center;
+        background-color: $bg-dark-blue;
+
+        @media only screen and (min-width: 992px) {
+            background-color: $white;
+        }
+
+        &:visited, &:focus {
+            text-decoration: none;
+            color: $bg-osf;
+        }
+
+        &:hover, &:active {
+            text-decoration: none;
+            color: $bg-osf;
+        }
+    }
+
+    &__image {
+        width: 28px;
+        height: auto;
+        color: $white;
+        display: none;
+
+        @media only screen and (min-width: 992px) {
+            display: block;
+        }
+
+        &_smaller{
+            width: 24px;
+            height: auto;
+        }
+
+        &_mobile {
+            display: block;
+
+            @media only screen and (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}
+// ----- // Login & Mini-cart -----

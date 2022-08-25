@@ -1,0 +1,140 @@
+// ----- Services -----
+.sevices-static {
+    background: $osf-brown;
+    height: 573px;
+
+    @media only screen and (min-width: 768px) {
+        height: 260px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        height: 198.5px;
+    }
+
+    &__whrapper {
+        width: 290px;
+        margin: 0 auto;
+        height: 573px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 0 30px 0;
+
+        @media only screen and (min-width: 560px) {
+            width: 365px;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            align-items: center;
+            flex-direction: row;
+            width: auto;
+            height: 260px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            height: 198.5px;
+            padding: 0;
+        }
+    }
+
+    &__facility {
+        display: flex;
+        padding: 0 15px 0 20px;
+        justify-content: space-between;
+
+        @media only screen and (min-width: 768px) {
+            align-items: center;
+            flex-direction: row;
+            padding: 0 5px 0 10px;
+            max-width: 230px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            padding: 0 15px 0 20px;
+            margin: 12px 0 0 0;
+            padding: 1em;
+            max-width: 355px;
+        }
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+
+            & img {
+                height: 57px;
+            }
+
+            @media only screen and (min-width: 768px) {
+                    flex-direction: row;
+                    height: auto;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                margin-top: 12px;
+                height: 100%;
+            }
+        }
+    }
+
+    &__image {
+        max-height: 67px;
+        width: auto;
+        margin: 0 25px;
+
+        @media only screen and (min-width: 768px) {
+            max-height: 52px;
+            width: auto;
+            margin: 0 10px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            max-width: 100%;
+            max-height: 67px;
+            height: 67px;
+            margin: 0 40px 0 0;
+        }
+    }
+
+    &__description {
+        position: relative;
+    }
+
+    &__title {
+        color: $white;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 18px;
+        }
+    }
+
+    &__subtitle {
+        width: 145px;
+        color: #84807D;
+        font-size: 14px;
+        margin: 0;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 12px;
+            width: 120px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 12px;
+            width: 170px;
+        }
+
+        @media only screen and (min-width: 1280px) {
+            width: 250px;
+            margin-bottom: 1em;
+            font-size: 14px;
+        }
+    }
+}
+// ----- // Services -----

@@ -1,0 +1,279 @@
+// ----- Footer -----
+.footer {
+    display: block;
+    background-color: $white;
+    height: 345px;
+    padding-top: 36.5px;
+    font-size: 13px;
+
+    @media only screen and (min-width: 768px) {
+        display: block;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 120px;
+
+        @media only screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+
+        @media only screen and (min-width: 992px) {
+            margin: auto;
+        }   
+    }
+
+    &__section {
+        margin-bottom: 15px;
+
+        @media only screen and (min-width: 768px) {
+            margin: 0;
+        }
+        
+        &_drop {
+            &:hover .footer__drop-down_contact {
+                height: auto;
+                opacity: 1;
+                overflow: visible;
+            }
+
+            &:hover .footer__title_icon {
+                transform: rotateX(180deg);
+            }
+        }
+
+        &_one {
+            line-height: 1.45;
+
+            @media only screen and (min-width: 768px) {
+                margin-right: -20px;
+            }
+        }
+
+        &_two {
+            &:hover .footer__drop-down_categories {
+                height: auto;
+                opacity: 1;
+                overflow: visible;
+
+                @media only screen and (min-width: 768px) {
+                    height: 345px;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    height: auto;
+                }
+            }
+
+            &:hover .footer__title_icon {
+                transform: rotateX(180deg);
+            }
+            
+            @media only screen and (min-width: 768px) {
+                position: absolute;
+                top: 240px;
+                left: 15px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                position: static;
+                margin-bottom: 0;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                position: static;
+                width: 497px;
+            } 
+        }
+
+        &_whrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+
+            @media only screen and (min-width: 768px) {
+                flex-direction: row;
+                width: 497px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                width: 370px;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                flex-direction: row;
+                width: 497px;
+            }
+        }
+
+        &_three {
+            &:hover .footer__drop-down_about {
+                height: auto;
+                opacity: 1;
+                overflow: visible;
+            }
+
+            &:hover .footer__title_icon {
+                transform: rotateX(180deg);
+            }
+        }
+    }
+
+    &__drop-down {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: $transition;
+
+        @media only screen and (min-width: 768px) {
+            height: auto;
+            opacity: 1;
+            overflow: visible;
+        }
+
+        &_categories {
+            @media only screen and (min-width: 768px) {
+                height: 0;
+                opacity: 0;
+                overflow: hidden;
+            }
+
+            @media only screen and (min-width: 992px) {
+                height: auto;
+                opacity: 1;
+                overflow: visible;
+            }
+        }
+    }
+    
+    &__copyrighting {
+        margin-bottom: 28px;
+    }
+
+    &__title {
+        position: relative;
+        color: #2F2F2F;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 9.5px;
+        cursor: pointer;
+
+        @media only screen and (min-width: 768px) {
+            cursor: default;
+            margin-bottom: 20.5px;
+        }
+
+        &_icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #67696F;
+
+            @media only screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+
+        &_display-inline {
+            @media only screen and (min-width: 768px) {
+                display: inline;
+            }
+
+            @media only screen and (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        &_first-child {
+            margin-bottom: 10px;
+        }
+
+        &_second-child .footer__drop-down_categorie {
+            display: flex;
+        }
+            
+        &_third-child .footer__drop-down_about{
+            &:hover {
+                height: auto;
+                opacity: 1;
+                overflow: visible;
+            }
+        }
+    }
+
+    &__item {        
+
+        a {
+            color: $black;
+            transition: $transition;
+            text-decoration: none;
+
+            &:visited, a:active {
+                color: $black;
+            }
+
+            &:hover {
+                color: $black;
+                opacity: 50%;
+            }
+        }
+
+        &_info {
+            margin-bottom: 13px;
+
+            &:last-child {
+                margin-top: 17px;
+            }
+        }
+
+        &_common {
+            margin-bottom: 12px;
+
+            a {
+                color: #8F8C8B;
+                transition: $transition;
+                text-decoration: none;
+
+                &:visited, a:active {
+                    color: #8F8C8B;
+                }
+
+                &:hover {
+                    color: #8F8C8B;
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        width: 125px;
+        justify-content: space-between;
+        margin: 10px auto 0;
+
+        @media only screen and (min-width: 768px) {
+            margin: 0;
+        }
+    }
+
+    &__link {
+        color: #B3B3B3;
+        font-size: 18px;
+        transition: $transition;
+        text-decoration: none;
+
+        &:visited, a:active {
+            color: #B3B3B3;
+        }
+
+        &:hover {
+            color: #B3B3B3;
+            opacity: 50%;
+        }
+    }
+}
+// ----- // Footer -----

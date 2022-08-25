@@ -1,0 +1,237 @@
+// ----- Slider and Facebook-follow -----
+.slider-facebook {
+    margin-top: 26px;
+}
+
+.slider-bootstrap {
+    &__indicators li {
+        width: 9px;
+        height: 9px;
+        border-radius: 100%;
+        margin: 0 11px 20px 0;
+        border: 2px solid transparent;
+
+        @media only screen and (min-width: 768px) {
+            margin: 0 11px 46px 0;
+        }
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    &__indicators .active {
+        background-color: transparent;
+        width: 9px;
+        height: 9px;;
+        border: 2px solid #fff;
+    }
+
+    &__item {
+        height: 505px;
+        width: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 35px 20px 35px 20px;
+
+        @media only screen and (min-width: 768px) {
+            padding: 38px 29px;
+        }
+
+        @media only screen and (min-width: 1280px) {
+            padding: 68px 59px;
+        }
+
+        &_one {
+            background-image: url(../img/background/bg-slider-one.jpg);
+            text-align: center;
+
+            @media only screen and (min-width: 768px) {
+                text-align: left;
+            }
+        }
+
+        &_two {
+            background-image: url(../img/background/bg-slider-two.jpg);
+            text-align: center;
+        }
+
+        &_three {
+            background-image: url(../img/background/bg-slider-three.jpg);
+            text-align: center;
+
+            @media only screen and (min-width: 768px) {
+                text-align: right;
+            }
+        }
+
+        &_four {
+            background-image: url(../img/background/bg-slider-one.jpg);
+            text-align: center;
+
+            @media only screen and (min-width: 768px) {
+                text-align: left;
+            }
+        }
+
+        &_five {
+            background-image: url(../img/background/bg-slider-two.jpg);
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        font-size: 28px;
+        font-family: "Myriad Pro";
+        color: $white;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        line-height: 1.2;
+        letter-spacing: 0.3px;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 36px;
+        }
+
+        @media only screen and (min-width: 1290px) {
+            font-size: 48px;
+        }
+
+        &_last-child {
+            margin-bottom: 45px;
+
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 60px;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    &__subtitle {
+        text-decoration: none;
+        font-size: 14px;
+        color: $white;
+        margin: 0 0 0 5px;
+        line-height: 1.35;
+
+        &_last-child {
+            margin-bottom: 102px;
+
+            @media only screen and (min-width: 768px) {
+                margin-bottom: 142px;
+            }
+
+            @media only screen and (min-width: 1280px) {
+                margin-bottom: 52px;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.9);
+        text-transform: uppercase;
+        padding: 11px 33px;
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        border-radius: 30px;
+        transition: $transition;
+        margin-left: 6px;
+
+        &:visited {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+            border-color: rgba(255, 255, 255, 0.8);
+            background-color:rgba(255, 255, 255, 0.2);
+        }   
+    }
+}
+
+.facebook-follow {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 505px;
+    text-align: center;
+
+    &__window {
+        height: 334px;
+        width: 100%;
+        background-image: url(../img/background/palm.jpg);
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 6px;
+        color: $white;
+    }
+
+    &__sale {
+        font-size: 100px;
+        font-weight: 900;
+        margin: 37px 0 28px;
+        letter-spacing: -5px;
+    }
+
+    &__description {
+        display: block;
+        margin: 0 auto;
+        font-size: 24px;
+        width: 130px;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    &__heading {
+        color: $osf-brown;
+        font-size: 18px;
+        margin: 16px 0 -16px;
+    }
+
+    &__subtitle {
+        display: block;
+        width: 205px;
+        color: $osf-brown;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+
+    &__link {
+        position: relative;
+        text-decoration: none;
+        font-size: 14px;
+        color: $bg-facebook;
+        text-transform: uppercase;
+        padding: 8px 40px 8px 51px;
+        border: 2px solid $bg-facebook;
+        border-radius: 30px;
+        transition: $transition;
+        margin: 0 auto;
+
+        &:visited {
+            color: $bg-facebook;
+        }
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+            background-color:$bg-facebook;
+        }
+    }
+        &__icon {
+            position: absolute;
+            font-size: 18px;
+            top: 11px;
+            left: 22px
+        }
+}
+// ----- // Slider and Facebook-follow -----

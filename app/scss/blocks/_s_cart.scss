@@ -1,0 +1,402 @@
+// ----- Cart Page -----
+.cart-page {
+    background-color: $white;
+    padding: 20px 0;
+    color: $osf-brown;
+
+    @media only screen and (min-width: 768px) {
+        padding: 40px 0;
+    }
+
+    @media only screen and (min-width: 992px) {
+        padding: 60px 0;
+    }
+
+    &__products {
+        border-bottom: 2px solid #EBE3D7;
+        padding: 0 20px 0;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        height: 350px;
+
+        @media only screen and (min-width: 768px) {
+            padding: 0 40px 10px;
+            display: block;
+            text-align: left;
+        }
+
+        @media only screen and (min-width: 992px) {
+            padding: 0 60px 30px;
+        }
+    }
+
+    &__purchase {
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        flex-direction: column;
+
+        @media only screen and (min-width: 768px) {
+            padding-top: 45px;
+        }
+
+        @media only screen and (min-width: 992px) {
+            align-items: flex-start;
+            padding-top: 65px;
+            flex-direction: row;
+        }
+    }
+
+    &__product {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (min-width: 768px) {
+            padding-top: 45px;
+            flex-direction: row;
+        }
+    }
+
+    &__image {
+        width: 96px;
+        height: 92px;
+        background-image: url(../img/placeholders/purchase-paceholder.jpg);
+    }
+
+    &__description {
+        width: 120px;
+
+        @media only screen and (min-width: 768px) {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        @media only screen and (min-width: 992px) {
+            width: 350px;
+            margin-right: 50px;
+        }
+
+        @media only screen and (min-width: 1280px) {
+            width: 400px;
+            margin-right: 200px;
+        }
+    }
+
+    &__name {
+        font-size: 14px;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    .counter-button {
+        margin-right: 0;
+
+        @media only screen and (min-width: 768px) {
+            margin-right: 25px;
+        }
+    }
+
+    &__price {
+        padding-top: 10px;
+        font-size: 12px;
+        color: #BCC4C8;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    &__price_counted {
+        font-size: 26px;
+        font-weight: 900;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    &__delete-product {
+        font-size: 12px;
+        color: #A4A19F;
+        border: 1.5px solid #EBE3D7;
+        padding-top: 1.5px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: $transition;
+        width: 23px;
+        height: 23px;
+
+        &:hover, &:active {
+            opacity: 0.7;
+        }
+    }
+
+    &__coupone {
+        display: none;
+        
+        @media only screen and (min-width: 992px) {
+            width: 460px;
+            display: block;
+            margin-bottom: 0;
+        }
+    }
+
+    &__input {
+        font-size: 12px;
+        padding: 6px 20px 5px;
+        outline: none;
+        border: 1.5px solid #EBE3D7;
+        border-radius: 20px;
+        color: $osf-brown;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    &__button {
+        height: 34.8px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 6.5px 30px 6px 30px;
+        border-radius: 40px;
+        transition: $transition;
+        width: 115px;
+        outline: none;
+        text-align: center;
+        color: $bg-osf;
+        border: 1.5px solid $bg-osf;
+        background-color: $white;
+        margin-left: 10px;
+
+        &:hover {
+            color: $bg-osf;
+            opacity: 75%;
+            outline: none;
+        }
+
+        &:active, &:focus {
+            color: $white;
+            border: 1.5px solid #EBE3D7;
+            background-color: $bg-osf;
+            transition: all 0.1s ease-in;
+            outline: none;
+        }
+    }
+}
+
+.calculator {
+    @media only screen and (min-width: 768px) {
+        width: 460px;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        @media only screen and (min-width: 768px) {
+            display: block;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__update {
+        height: 34.8px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 7px 15px 6px 15px;
+        border-radius: 40px;
+        transition: $transition;
+        width: 155px;
+        outline: none;
+        text-align: center;
+        color: $bg-osf;
+        border: 1.5px solid $bg-osf;
+        background-color: $white;
+        margin-bottom: 10px;
+
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            color: $bg-osf;
+            opacity: 75%;
+            outline: none;
+        }
+
+        &:active, &:focus {
+            color: $white;
+            border: 1.5px solid #EBE3D7;
+            background-color: $bg-osf;
+            transition: all 0.1s ease-in;
+            outline: none;
+        }
+    }
+
+    &__purchase {
+        height: 38px;
+        font-size: 14px;
+        background-color: $bg-osf;
+        text-transform: uppercase;
+        color: $white;
+        padding: 8px 30px 6px 30px;
+        border-radius: 40px;
+        border: 1.5px solid #EBE3D7;
+        transition: $transition;
+        width: 245px;
+        outline: none;
+        text-align: center;
+
+        @media only screen and (min-width: 768px) {
+            margin-left: 10px;
+        }
+
+        &:hover, &:focus {
+            color: $white;
+            opacity: 75%;
+            outline: none;
+        }
+
+        &:active {
+            color: $bg-osf;
+            border: 1.5px solid $bg-osf;
+            background-color: $white;
+            transition: all 0.1s ease-in;
+            outline: none;
+        }
+    }
+
+    &__price_without-shipping {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 900;
+
+        @media only screen and (min-width: 768px) {
+            width: 235px;
+        }
+
+        &_regular {
+            font-weight: 500;
+        }
+    }
+
+    &__subtotal {
+        font-size: 14px;
+        font-weight: 900;
+        margin-left: 5px;
+
+        @media only screen and (min-width: 768px) {
+            margin-left: 0;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+    }
+
+    &__total {
+        font-size: 36px;
+        font-weight: 900;
+        margin-left: 10px;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 48px;
+            margin-left: 0;
+        }
+    }
+}
+
+.shipping {
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__form {
+        width: 190px;
+        margin-top: 10px;
+
+        @media only screen and (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    &__input {
+        margin-right: 5px;
+    }
+
+    &__label {
+        display: block;
+        width: 180px;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .shipping__label input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        top: 4px;
+        left: 2px;
+    }
+
+    &__checkmark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 17px;
+        width: 17px;
+        background-color: transparent;
+        border: 1.5px solid #EBE3D7;
+        border-radius: 50%;
+    }
+
+    .shipping__label:hover input ~ .shipping__checkmark {
+        background-color: #EBE3D7;
+    }
+
+    .shipping__label input:checked ~ .shipping__checkmark {
+        background-color: transparent;
+    }
+
+    .shipping__checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .shipping__label input:checked ~ .shipping__checkmark:after {
+        display: block;
+    }
+
+    .shipping__label .shipping__checkmark:after {
+        top: 3px;
+        left: 3px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $bg-osf;
+    }
+}
+// ----- // Cart Page -----

@@ -26,7 +26,16 @@ ul {
     }
 }
 
-.show {
-    display: flex;
+input[type="button"] {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    cursor: pointer;
 }
-  
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
