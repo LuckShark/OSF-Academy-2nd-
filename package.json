@@ -1,8 +1,11 @@
 {
   "name": "osf-academy",
   "version": "1.0.0",
-  "description": "eCommerce Frontend Project (HTML/CSS/JavaScript + Responsive)",
+  "description": "Frontend Project - Academy 08-2022",
   "main": "index.js",
+  "engines": {
+    "node": "16.16.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
